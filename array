@@ -1,0 +1,21 @@
+let collection = [
+    {},                     // empty object
+    [],                     // empty array
+    true,                   // boolean
+    "john",                 // string
+    function(){},           // function
+    9003884844,             // number
+    undefined,              // undefined
+    null,                   // null
+    new String("abc"),      // String object
+    new Date()              // Date object
+];
+
+console.log(collection);
+
+// Adding custom properties to the array object
+collection.teacherName = "John Mac";
+collection.phoneNo = 959999889;
+
+console.log(collection.teacherName); // "John Mac"
+console.log(collection.phoneNo);     // 959999889
