@@ -1,8 +1,13 @@
-<html>
-  <head><title>My Page</title></head>
-  <body>
-  <script language="JavaScript">
-  document.write('This is my first JavaScript Page');
-</script>
-  </body>
-  </html>
+function findFactorial() {
+
+    let num = document.getElementById("num").value;
+
+    let factorial = 1;
+
+    for (let i = 1; i <= num; i++) {
+        factorial = factorial * i;
+    }
+
+    document.getElementById("result").innerHTML =
+        "Factorial = " + factorial;
+}
